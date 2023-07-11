@@ -1,17 +1,87 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quizz JS</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    
 
-    <script src="app.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quizz JS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1><span>Quizz</span> Culture générale. <div class="logo-h1"></div>
+    </h1>
+
+    <form class="quizz-container">
+
+      <div class="question1 card">
+
+        <p><label for="question1">Qui est sacré empereur de France le 2 décembre 1804 ?</label></br>
+          <input type="radio" id="response1Q1" name="responseQ1" value="response1Q1" required>Clovis</br>
+          <input type="radio" id="response2Q1" name="responseQ1" value="response2Q1" required>Abraham Lincoln</br>
+          <input type="radio" id="response3Q1" name="responseQ1" value="response3Q1" required>Napoleon Bonaparte</br>
+        </p>
+
+      </div>
+
+      <div class="question2 card">
+
+        <p><label for="question2">Quand la déclaration d'indépendance des Etats-Unis a-t-elle été votée?</label></br>
+          <input type="radio" id="response1Q2" name="responseQ2" value="response1Q2" required>4 juilllet 1776</br>
+          <input type="radio" id="response2Q2" name="responseQ2" value="response2Q2" required>18 avril 1856</br>
+          <input type="radio" id="response3Q2" name="responseQ2" value="response3Q2" required>30 juin 1925</br>
+        </p>
+
+      </div>
+
+      <div class="question3 card">
+
+        <p><label for="question3">Quand a eu lieu la chute de l'empire romain d'occident?</label></br>
+          <input type="radio" id="response1Q3" name="responseQ3" value="response1Q3" required>15 ap. J-C</br>
+          <input type="radio" id="response2Q3" name="responseQ3" value="response2Q3" required>476 ap. J-C</br>
+          <input type="radio" id="response3Q3" name="responseQ3" value="response3Q3" required>-740 ap. J-C</br>
+        </p>
+
+      </div>
+
+      <div class="question4 card">
+
+        <p><label for="question4">Quelle est la capitale de la Slovénie ?</label></br>
+          <input type="radio" id="response1Q4" name="responseQ4" value="response1Q4" required>Ljubljana</br>
+          <input type="radio" id="response2Q4" name="responseQ4" value="response2Q4" required>Belgrade</br>
+          <input type="radio" id="response3Q4" name="responseQ4" value="response3Q4" required>Bratislava</br>
+        </p>
+
+      </div>
+
+      <div class="question5 card">
+
+        <p><label for="question5">Combien d'habitants compte l'Irlande en 2020 ?</label></br>
+          <input type="radio" id="response1Q5" name="responseQ5" value="response1Q5" required>1.365 Million</br>
+          <input type="radio" id="response2Q5" name="responseQ5" value="response2Q5" required>21 Millions</br>
+          <input type="radio" id="response3Q5" name="responseQ5" value="response3Q5" required>4.9 Millions</br>
+        </p>
+
+      </div>
+
+      <button>Valider <span></span></button>
+
+    </form>
+
+    <div class="result">
+      <p>Cliquez sur <span>valider</span> pour voir les <span>résultats</span>.</p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
 </html>

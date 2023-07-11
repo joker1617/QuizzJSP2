@@ -12,3 +12,58 @@ body {
   background: linear-gradient(to right, #e0eafc, #cfdef3);
   padding: clamp(20px, 5vw, 50px) 20px 10px;
 }
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.container span {
+  font-weight: 900;
+}
+
+.card {
+  background-color: rgb(225, 220, 220);
+  margin: 15px 0;
+  box-shadow: 1px 1px 2px;
+  border-radius: 5px;
+}
+
+.card p {
+  padding: 20px 0 20px 15px;
+}
+
+.card input {
+  margin: 10px 10px 10px 0;
+}
+
+.card label {
+  font-weight: 600;
+}
+
+button {
+  display: flex;
+  background-color: #f1f1f1;
+  margin: 30px auto;
+  font-size: 25px;
+  padding: 2px 0;
+  width: 200px;
+  box-shadow: 1px 1.2px 1px;
+  border-radius: 5px;
+  background: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.result {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #f1f1f1;
+  box-shadow: 1px 1.2px 1px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+
+}
