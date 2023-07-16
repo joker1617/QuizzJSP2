@@ -41,7 +41,7 @@ function checkResponse() {
   console.log(values);
 
   let correctCount = 0;
-
+  /*on passe la couleur de la card en vert ou en rouge suivant si la réponse est bonne ou non et on incrémente le compteur de bonne réponse */
   for (let i = 0; i < responses.length; i++) {
     if (responses[i] === values[i]) {
       card[i].style.background = "green";
@@ -54,6 +54,7 @@ function checkResponse() {
 }
 const resultContainer = document.querySelector(".result");
 
+// On affiche le résultat
 function showResult(correctCount) {
   // const correctCount = e.correctCount;
   resultContainer.innerText = `Nombre de bonnes réponses: ${correctCount}`;
