@@ -9,7 +9,8 @@ form.addEventListener("submit", handleForm);
 function handleForm(e) {
   e.preventDefault();
 
-  checkResponse();
+  const correctCount = checkResponse();
+  showResult(correctCount);
 }
 
 function checkResponse() {
@@ -39,11 +40,21 @@ function checkResponse() {
   });
   console.log(values);
 
+  let correctCount = 0;
+
   for (let i = 0; i < responses.length; i++) {
     if (responses[i] === values[i]) {
-      card.style.backgroundColor = "green";
+      card[i].style.background = "green";
+      correctCount++;
     } else {
-      card.style.backgroundColorColor = "red";
+      card[i].style.background = "red";
     }
   }
+  return correctCount;
+}
+const resultContainer = document.querySelector(".result");
+
+function showResult(correctCount) {
+  // const correctCount = e.correctCount;
+  resultContainer.innerText = `Nombre de bonnes réponses: ${correctCount}`;
 }
