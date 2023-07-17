@@ -73,8 +73,9 @@ button span {
   font-size: 15px;
 }
 
-.result {
+.result-container {
   display: flex;
+  flex-direction: column;
   text-align: center;
   justify-content: center;
   width: 100%;
@@ -84,4 +85,17 @@ button span {
   margin-bottom: 20px;
   padding: 10px 0;
 
+}
+
+.commentaire {
+  padding-top: 8px;
+}
+
+.result {
+  padding: 10px 0;
+}
+
+.conseil {
+  font-size: 12px;
+  padding-bottom: 8px;
 }

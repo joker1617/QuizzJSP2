@@ -52,10 +52,24 @@ function checkResponse() {
   }
   return correctCount;
 }
+const commentaireContainer = document.querySelector(".commentaire");
 const resultContainer = document.querySelector(".result");
+const conseilContainer = document.querySelector(".conseil");
 
 // On affiche le résultat
 function showResult(correctCount) {
-  // const correctCount = e.correctCount;
-  resultContainer.innerText = `Nombre de bonnes réponses: ${correctCount}`;
+  if (correctCount <= 2) {
+    commentaireContainer.innerText = `😭 Peut mieux faire !! 😭`;
+  } else if (correctCount > 2 && correctCount < 5) {
+    commentaireContainer.innerText = `Bon score !!!`;
+  } else {
+    commentaireContainer.innerText = `✨ Parfait !!!! ✨`;
+  }
+
+  resultContainer.innerText = `Score: ${correctCount}/5`;
+  if (correctCount < 5) {
+    conseilContainer.innerText = `Retentez une autre réponse dans les cases rouges, puis re-validez !`;
+  } else {
+    conseilContainer.innerText = `Quizz terminé !`;
+  }
 }
